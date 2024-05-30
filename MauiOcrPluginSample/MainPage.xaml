@@ -26,9 +26,16 @@
 
             <Button
                 x:Name="CounterBtn"
-                Text="Click me" 
-                SemanticProperties.Hint="Counts the number of times you click"
+                Text="Pick Image" 
+                SemanticProperties.Hint="Picks an image for OCR"
                 Clicked="OnCounterClicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="PictureBtn"
+                Text="Take Picture" 
+                SemanticProperties.Hint="Takes a picture for OCR"
+                Clicked="PictureBtn_Clicked"
                 HorizontalOptions="Fill" />
         </VerticalStackLayout>
     </ScrollView>
