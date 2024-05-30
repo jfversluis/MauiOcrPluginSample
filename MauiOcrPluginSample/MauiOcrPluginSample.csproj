@@ -63,6 +63,7 @@
 		<PackageReference Include="Plugin.Maui.OCR" Version="1.0.8" />
 	</ItemGroup>
 
+	<!-- Edit after video: a better condition would be Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'" so its not specific to a .NET version and needs updating -->
 	<ItemGroup Condition="( '$(TargetFramework)' == 'net8.0-android' )">
 		<PackageReference Include="Xamarin.AndroidX.Collection.Ktx" Version="1.4.0" />
 	</ItemGroup>
